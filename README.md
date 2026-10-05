@@ -44,12 +44,17 @@ Note: found inconsistent error handling in callers — worth addressing separate
 
 ## Install
 
+**Personal install** (available in every project):
+
 ```bash
 mkdir -p ~/.claude/skills/scope-lock
-curl -o ~/.claude/skills/scope-lock/SKILL.md \
+curl -fsSL -o ~/.claude/skills/scope-lock/SKILL.md \
   https://raw.githubusercontent.com/Feli2arias/scope-lock/main/SKILL.md
-/scope-lock
 ```
+
+**Project install** (shared with your team via the repo): run the same commands from the project root, replacing `~/.claude/skills` with `.claude/skills`.
+
+Start a new Claude Code session so the skill is picked up. Claude loads it automatically when the task matches its description, or you can invoke it manually with `/scope-lock`.
 
 ---
 
